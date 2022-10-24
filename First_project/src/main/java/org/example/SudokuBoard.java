@@ -43,19 +43,22 @@ public class SudokuBoard {
     public void fillBoard() {
         for (int i = 0; i < 9; i++) {
             if (!pathToSolve(i, 0)) {
-                for (int j = 0; j < 9; j++) {
-                    sudokuBoard[i][j] = 0;
-                }
+                resetRow(i);
                 i--;
+
                 loopCount++;
                 if (loopCount == 30) {
                     loopCount = 0;
-                    for (int j = 0; j < 9; j++) {
-                        sudokuBoard[i][j] = 0;
-                    }
+                    resetRow(i);
                     i--;
                 }
             }
+        }
+    }
+
+    private void resetRow(int row) {
+        for (int j = 0; j < 9; j++) {
+            sudokuBoard[row][j] = 0;
         }
     }
 
@@ -78,5 +81,15 @@ public class SudokuBoard {
             }
         }
         return true;
+    }
+
+
+    public void printBoard() {
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                System.out.print(sudokuBoard[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
