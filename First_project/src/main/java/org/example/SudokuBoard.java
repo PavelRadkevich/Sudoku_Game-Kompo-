@@ -1,68 +1,33 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
 public class SudokuBoard {
-    private final int size = 9;
-    private int[][] sudokuBoard = new int [size][size];
-    private final ArrayList<Integer> list1
-            = new ArrayList(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));
-    private int loopCount = 0;
+    //private final int size = 9;
+    private int[][] sudokuBoard = new int [9][9];
+    private SudokuSolver solver;
+
+
 
     public SudokuBoard() {
     }
 
-    private int getCell(int x, int y) {
-        return sudokuBoard[x][y];
+    public int getCell(int x, int y) {return sudokuBoard[x][y];}
+
+    public void setCell(int x, int y, int value) {sudokuBoard[x][y] = value;}
+
+    public void solveGame() {
+        this.solver = new BackTrackingSudokuSolver();
+        solver.solve(this);
     }
-
-    private boolean pathToSolve(int row, int column) {
-
-        List<Integer> exrow = (List<Integer>) list1.clone();
-        Collections.shuffle(exrow);
-
-
-        if (column == size) {
-            return true;
-        }
-
+    public void printBoard() {
         for (int i = 0; i < 9; i++) {
-            if (checkCell(sudokuBoard, exrow.get(i), row, column)) {
-                sudokuBoard[row][column] = exrow.get(i);
-                if (pathToSolve(row, column + 1)) {
-                    return true;
-                }
+            for (int j = 0; j < 9; j++) {
+                System.out.print(sudokuBoard[i][j] + " ");
             }
-        }
-        return false;
-    }
-
-    public void fillBoard() {
-        for (int i = 0; i < 9; i++) {
-            if (!pathToSolve(i, 0)) {
-                resetRow(i);
-                i--;
-
-                loopCount++;
-                if (loopCount == 30) {
-                    loopCount = 0;
-                    resetRow(i);
-                    i--;
-                }
-            }
+            System.out.println();
         }
     }
 
-    private void resetRow(int row) {
-        for (int j = 0; j < 9; j++) {
-            sudokuBoard[row][j] = 0;
-        }
-    }
-
-    private boolean checkCell(int [][]sudokuBoard, int num, int x, int y) {
+    public boolean checkCell(int num, int x, int y) {
         for (int i = 0; i < 9; i++) {
             if (getCell(i, y) == num) {
                 return false;
@@ -75,21 +40,12 @@ public class SudokuBoard {
         }
         for (int i = 0; i <= 2; i++) {
             for (int j = 0; j <= 2; j++) {
-                if (sudokuBoard[i + x - x % 3] [j + y - y % 3] == num) {
+                if (getCell(i + x - x % 3, j + y - y % 3) == num) {
                     return false;
                 }
             }
         }
         return true;
     }
-
-
-    public void printBoard() {
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                System.out.print(sudokuBoard[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
 }
+
