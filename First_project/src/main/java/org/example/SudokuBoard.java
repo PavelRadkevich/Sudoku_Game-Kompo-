@@ -2,7 +2,7 @@ package org.example;
 
 public class SudokuBoard {
     //private final int size = 9;
-    private int[][] sudokuBoard = new int [9][9];
+    private final int[][] sudokuBoard = new int [9][9];
     private SudokuSolver solver;
 
 
@@ -10,9 +10,20 @@ public class SudokuBoard {
     public SudokuBoard() {
     }
 
-    public int getCell(int x, int y) {return sudokuBoard[x][y];}
+    public int getCell(int x, int y) {
+        if (x>=0 && x<9 && y>=0 && y<9)
+            return sudokuBoard[x][y];
+        else
+            return 0;
+    }
 
-    public void setCell(int x, int y, int value) {sudokuBoard[x][y] = value;}
+    public void setCell(int x, int y, int value){
+        if (x>=0 && x<9 && y>=0 && y<9 && value >= 1 && value <= 9)
+            sudokuBoard[x][y] = value;
+        else
+            sudokuBoard[x][y] = 0;
+
+    }
 
     public void solveGame() {
         this.solver = new BackTrackingSudokuSolver();

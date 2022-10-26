@@ -27,7 +27,7 @@ public class BackTrackingSudokuSolver implements SudokuSolver {
         }
     };
 
-    private boolean pathToSolve(int row, int column, SudokuBoard board) {
+    private boolean pathToSolve(int row, int column, SudokuBoard board){
 
         List<Integer> exrow = (List<Integer>) list1.clone();
         Collections.shuffle(exrow);
