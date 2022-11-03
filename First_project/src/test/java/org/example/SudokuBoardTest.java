@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package org.example;
 
 import org.junit.jupiter.api.Test;
@@ -9,6 +8,7 @@ public class SudokuBoardTest {
 
     @Test
     public void testSetCell () throws IndexOutRange {
+        SudokuSolver bs = new BackTrackingSudokuSolver();
         SudokuBoard board = new SudokuBoard();
         for (int x =0; x < 9; x++) {
             for (int y = 0; y < 9; y++) {
@@ -27,6 +27,7 @@ public class SudokuBoardTest {
 
     @Test
     public void GateOutOfRange() {
+        SudokuSolver bs = new BackTrackingSudokuSolver();
         SudokuBoard board = new SudokuBoard();
         assertEquals(board.getCell(-3,3), 0);
         assertEquals(board.getCell(4,-8), 0);
@@ -36,6 +37,7 @@ public class SudokuBoardTest {
 
     @Test
     public void testIndex() {
+        SudokuSolver bs = new BackTrackingSudokuSolver();
         SudokuBoard board = new SudokuBoard();
         try {
             board.setCell(-3,5,7);
@@ -64,24 +66,3 @@ public class SudokuBoardTest {
 
     }
 }
-=======
-package org.example;
-
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-public class SudokuBoardTest {
-
-    @Test
-    public void testSetCell () {
-        SudokuBoard board = new SudokuBoard();
-        board.setCell(1,1, 5);
-        assertEquals(board.getCell(1, 1), 5);
-        board.setCell(2, 2, -1);
-        assertEquals(board.getCell(2, 2), 0);
-        board.setCell(3,3,10);
-        assertEquals(board.getCell(3, 3), 10);
-    }
-}
->>>>>>> 19bcde82115751170478f92e5ff4930205dacf5e
