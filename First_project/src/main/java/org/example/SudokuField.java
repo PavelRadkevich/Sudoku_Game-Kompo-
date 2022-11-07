@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package org.example;
 
 public class SudokuField {
@@ -43,3 +44,19 @@ public class SudokuField {
         this.value = value;
     }
 }
+=======
+package org.example;
+
+public class SudokuField {
+    private int value = 0;
+
+    public SudokuField () {}
+    public int getFieldValue (){
+        return value;
+    }
+    public void setFieldValue (int a){
+        value = a;
+    }
+
+}
+>>>>>>> f7b092090c6931d7b0ade96392d7a40ce27a4090

@@ -12,10 +12,17 @@ public class BackTrackingSudokuSolverTest {
     @Test
     public void testFillBoard() throws IndexOutRange {
         SudokuSolver bs = new BackTrackingSudokuSolver();
+<<<<<<< HEAD
         SudokuBoard board1 = new SudokuBoard(bs);
         SudokuBoard board2 = new SudokuBoard(bs);
         board1.solveGame();
         board2.solveGame();
+=======
+        SudokuBoard board1 = new SudokuBoard();
+        SudokuBoard board2 = new SudokuBoard();
+        board1.solveGame(bs);
+        board2.solveGame(bs);
+>>>>>>> f7b092090c6931d7b0ade96392d7a40ce27a4090
         int match = 0;
         try {
             Method m = SudokuBoard.class.getDeclaredMethod("getCell", int.class, int.class);
@@ -38,8 +45,13 @@ public class BackTrackingSudokuSolverTest {
     @Test
     public void testNotRepeat() throws IndexOutRange {
         SudokuSolver bs = new BackTrackingSudokuSolver();
+<<<<<<< HEAD
         SudokuBoard board = new SudokuBoard(bs);
         board.solveGame();
+=======
+        SudokuBoard board = new SudokuBoard();
+        board.solveGame(bs);
+>>>>>>> f7b092090c6931d7b0ade96392d7a40ce27a4090
         int match = 0;
         try {
             Method m = SudokuBoard.class.getDeclaredMethod("getCell", int.class, int.class);
@@ -70,8 +82,13 @@ public class BackTrackingSudokuSolverTest {
     @Test
     public void testRepeatInBox() throws IndexOutRange {
         SudokuSolver bs = new BackTrackingSudokuSolver();
+<<<<<<< HEAD
         SudokuBoard board = new SudokuBoard(bs);
         board.solveGame();
+=======
+        SudokuBoard board = new SudokuBoard();
+        board.solveGame(bs);
+>>>>>>> f7b092090c6931d7b0ade96392d7a40ce27a4090
         int match = 0;
         try {
             Method m = SudokuBoard.class.getDeclaredMethod("getCell", int.class, int.class);
@@ -99,8 +116,13 @@ public class BackTrackingSudokuSolverTest {
     @Test
     void testCorrectRange() throws IndexOutRange {
         SudokuSolver bs = new BackTrackingSudokuSolver();
+<<<<<<< HEAD
         SudokuBoard board = new SudokuBoard(bs);
         board.solveGame();
+=======
+        SudokuBoard board = new SudokuBoard();
+        board.solveGame(bs);
+>>>>>>> f7b092090c6931d7b0ade96392d7a40ce27a4090
         int wrong = 0;
         try {
             Method m = SudokuBoard.class.getDeclaredMethod("getCell", int.class, int.class);

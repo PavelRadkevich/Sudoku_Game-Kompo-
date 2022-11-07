@@ -9,7 +9,11 @@ public class SudokuBoardTest {
     @Test
     public void testSetCell () throws IndexOutRange {
         SudokuSolver bs = new BackTrackingSudokuSolver();
+<<<<<<< HEAD
         SudokuBoard board = new SudokuBoard(bs);
+=======
+        SudokuBoard board = new SudokuBoard();
+>>>>>>> f7b092090c6931d7b0ade96392d7a40ce27a4090
         for (int x =0; x < 9; x++) {
             for (int y = 0; y < 9; y++) {
                 for (int value = 1; value <= 9; value++) {
@@ -28,7 +32,11 @@ public class SudokuBoardTest {
     @Test
     public void GateOutOfRange() {
         SudokuSolver bs = new BackTrackingSudokuSolver();
+<<<<<<< HEAD
         SudokuBoard board = new SudokuBoard(bs);
+=======
+        SudokuBoard board = new SudokuBoard();
+>>>>>>> f7b092090c6931d7b0ade96392d7a40ce27a4090
         assertEquals(board.getCell(-3,3), 0);
         assertEquals(board.getCell(4,-8), 0);
         assertEquals(board.getCell(13,3), 0);
@@ -38,7 +46,11 @@ public class SudokuBoardTest {
     @Test
     public void testIndex() {
         SudokuSolver bs = new BackTrackingSudokuSolver();
+<<<<<<< HEAD
         SudokuBoard board = new SudokuBoard(bs);
+=======
+        SudokuBoard board = new SudokuBoard();
+>>>>>>> f7b092090c6931d7b0ade96392d7a40ce27a4090
         try {
             board.setCell(-3,5,7);
         }
