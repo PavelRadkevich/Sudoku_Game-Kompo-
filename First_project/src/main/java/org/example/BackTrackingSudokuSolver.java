@@ -6,11 +6,10 @@ import java.util.Collections;
 import java.util.List;
 
 public class BackTrackingSudokuSolver implements SudokuSolver {
+
     private final ArrayList<Integer> list1
             = new ArrayList(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));
     int loopCount = 0;
-
-    public BackTrackingSudokuSolver (){}
 
     public void solve(SudokuBoard board) throws IndexOutRange {
         for (int i = 0; i < 9; i++) {
