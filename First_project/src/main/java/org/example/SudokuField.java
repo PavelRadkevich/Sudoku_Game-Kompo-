@@ -11,9 +11,7 @@ public class SudokuField {
 
     }
 
-    public int getFieldValue() {
-        return value;
-    }
+    public int getFieldValue() { return value; }
 
     public void setColumn(SudokuColumn column) {
         this.column = column;

@@ -2,16 +2,18 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SudokuGrupsTest {
     @Test
     public void testVerifyTrue() {
 
-        SudokuField[] fields = new SudokuField[9];
+        ArrayList<SudokuField> fields = new ArrayList<>();
         for (int i = 0; i < 9; i++) {
-            fields[i] = new SudokuField();
-            fields[i].setFieldValue(i + 1);
+            fields.add(i, new SudokuField());
+            fields.get(i).setFieldValue(i + 1);
         }
         SudokuGroups row = new SudokuRow(fields);
         SudokuGroups column = new SudokuColumn(fields);
@@ -25,10 +27,10 @@ public class SudokuGrupsTest {
     @Test
     public void testVerifyFalse() {
 
-        SudokuField[] fields = new SudokuField[9];
+        ArrayList<SudokuField> fields = new ArrayList<>();
         for (int i = 0; i < 9; i++) {
-            fields[i] = new SudokuField();
-            fields[i].setFieldValue(3);
+            fields.add(i, new SudokuField());
+            fields.get(i).setFieldValue(3);
         }
         SudokuGroups row = new SudokuRow(fields);
         SudokuGroups column = new SudokuColumn(fields);
