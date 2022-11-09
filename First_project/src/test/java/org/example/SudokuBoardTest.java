@@ -36,9 +36,15 @@ public class SudokuBoardTest {
             Method m = SudokuBoard.class.getDeclaredMethod("checkBoard");
             m.setAccessible(true);
             assertTrue((Boolean) m.invoke(board));
-
-
-
+            for (int i = 0; i < 9; i++) {
+                assertTrue(board.getRow(i).verify());
+                assertTrue(board.getColumn(i).verify());
+            }
+            for (int i = 0; i < 9; i++) {
+                for (int j = 0; j < 9; j++) {
+                    assertTrue(board.getBox(i, j).verify());
+                }
+            }
         }
         catch(Exception e) {
             e.printStackTrace();
@@ -58,6 +64,15 @@ public class SudokuBoardTest {
                     board.setCell(i, j, 1);
                     board.updateBoard();
                     assertFalse((Boolean) m.invoke(board));
+                }
+            }
+            for (int i = 0; i < 9; i++) {
+                assertFalse(board.getRow(i).verify());
+                assertFalse(board.getColumn(i).verify());
+            }
+            for (int i = 0; i < 9; i++) {
+                for (int j = 0; j < 9; j++) {
+                    assertFalse(board.getBox(i, j).verify());
                 }
             }
         } catch (Exception e) {
