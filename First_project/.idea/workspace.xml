@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1e8d4c-2f4b-4ff9-9d42-8b02fa99f122" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sudoku.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BackTrackingSudokuSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BackTrackingSudokuSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/IndexOutRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/IndexOutRange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/NullValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuBoard.java.rej" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuBoard.java.rej" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuColumn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuGroups.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuRow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SudokuSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SudokuSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BackTrackingSudokuSolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/BackTrackingSudokuSolverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SudokuBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SudokuBoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SudokuFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SudokuFieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SudokuGrupsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/SudokuGrupsTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="6c1e8d4c-2f4b-4ff9-9d42-8b02fa99f122" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +159,7 @@
       <workItem from="1667731962512" duration="19647000" />
       <workItem from="1667824643773" duration="11027000" />
       <workItem from="1668027188557" duration="3239000" />
-      <workItem from="1668080222804" duration="295000" />
+      <workItem from="1668080222804" duration="690000" />
     </task>
     <servers />
   </component>
