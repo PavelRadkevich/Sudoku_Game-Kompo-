@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class SudokuBoard {
     private final SudokuField[][] sudokuBoard = new SudokuField[9][9];
     private SudokuSolver solver;
@@ -13,6 +15,7 @@ public class SudokuBoard {
                 this.sudokuBoard[i][j] = new SudokuField();
             }
         }
+        this.updateBoard();
     }
 
     public int getCell(int x, int y) {
@@ -35,32 +38,23 @@ public class SudokuBoard {
         }
     }
 
-    public SudokuColumn getColumn(int x) throws NullValue {
-        if (sudokuBoard[x][0].getColumn() == null) {
-            throw new NullValue("Null value of column:" + x);
-        }
+    public SudokuColumn getColumn(int x) {
         return sudokuBoard[x][0].getColumn();
     }
 
-    public SudokuRow getRow(int y) throws NullValue {
-        if (sudokuBoard[0][y].getRow() == null) {
-            throw new NullValue("Null value of row:" + y);
-        }
+    public SudokuRow getRow(int y) {
         return sudokuBoard[0][y].getRow();
     }
 
-    public SudokuBox getBox(int x, int y) throws NullValue {
-        if (sudokuBoard[x][y].getBox() == null) {
-            throw new NullValue("Null value of box of index x: " + x + " and index y: " + y);
-        }
+    public SudokuBox getBox(int x, int y)  {
         return sudokuBoard[x][y].getBox();
     }
 
     public void updateBoard() {
         for (int i = 0; i < 9; i++) {
-            SudokuField[] fields = new SudokuField[9];
+            ArrayList<SudokuField> fields = new ArrayList<>();
             for (int j = 0; j < 9; j++) {
-                fields[j] = sudokuBoard[i][j];
+                fields.add(j, sudokuBoard[i][j]);
             }
             for (int j = 0; j < 9; j++) {
                 SudokuRow row = new SudokuRow(fields);
@@ -68,9 +62,9 @@ public class SudokuBoard {
             }
         }
         for (int i = 0; i < 9; i++) {
-            SudokuField[] fields = new SudokuField[9];
+            ArrayList<SudokuField> fields = new ArrayList<>();
             for (int j = 0; j < 9; j++) {
-                fields[j] = sudokuBoard[j][i];
+                fields.add(j, sudokuBoard[j][i]);
             }
             for (int j = 0; j < 9; j++) {
                 SudokuColumn column = new SudokuColumn(fields);
@@ -79,18 +73,18 @@ public class SudokuBoard {
         }
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                SudokuField[] fields = new SudokuField[9];
+                ArrayList<SudokuField> fields = new ArrayList<>();
                 int number = 0;
                 for (int x = 0; x < 3; x++) {
                     for (int y = 0; y < 3; y++) {
-                        fields[number] = sudokuBoard[i * 3 + x][j * 3 + y];
+                        fields.add(number, sudokuBoard[i * 3 + x][j * 3 + y]);
                         number++;
                     }
                 }
                 for (int x = 0; x < 3; x++) {
                     for (int y = 0; y < 3; y++) {
                         SudokuBox box = new SudokuBox(fields);
-                        sudokuBoard[i + x][j + y].setBox(box);
+                        sudokuBoard[i * 3 + x][j * 3 + y].setBox(box);
                     }
                 }
             }
@@ -100,7 +94,7 @@ public class SudokuBoard {
     public void solveGame() throws IndexOutRange {
         this.solver = new BackTrackingSudokuSolver();
         solver.solve(this);
-        updateBoard();
+        this.updateBoard();
     }
 
     private boolean checkBoard() {
@@ -120,25 +114,23 @@ public class SudokuBoard {
             return true;
     }
 
-    public boolean checkCell(int num, int x, int y) {
-        for (int i = 0; i < 9; i++) {
-            if (getCell(i, y) == num) {
-                return false;
-            }
+    public boolean checkCell(int num, int x, int y) throws IndexOutRange {
+        setCell(x, y, num);
+        if (!sudokuBoard[x][y].getColumn().verify()) {
+            sudokuBoard[x][y].setFieldValue(0);
+            return false;
         }
-        for (int i = 0; i < 9; i++) {
-            if (getCell(x, i) == num) {
-                return false;
-            }
+        if (!sudokuBoard[x][y].getRow().verify()) {
+            sudokuBoard[x][y].setFieldValue(0);
+            return false;
         }
-        for (int i = 0; i <= 2; i++) {
-            for (int j = 0; j <= 2; j++) {
-                if (getCell(i + x - x % 3, j + y - y % 3) == num) {
-                    return false;
-                }
-            }
+        if (!sudokuBoard[x][y].getBox().verify()) {
+            sudokuBoard[x][y].setFieldValue(0);
+            return false;
         }
+        sudokuBoard[x][y].setFieldValue(0);
         return true;
     }
+
 }
 

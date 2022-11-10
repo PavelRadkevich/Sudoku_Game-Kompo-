@@ -36,9 +36,13 @@ public class SudokuBoardTest {
             Method m = SudokuBoard.class.getDeclaredMethod("checkBoard");
             m.setAccessible(true);
             assertTrue((Boolean) m.invoke(board));
-
-
-
+            for (int i = 0; i < 9; i++) {
+                for (int j = 0; j < 9; j++) {
+                    assertTrue(board.getRow(i).verify());
+                    assertTrue(board.getColumn(i).verify());
+                    assertTrue(board.getBox(i, j).verify());
+                }
+            }
         }
         catch(Exception e) {
             e.printStackTrace();
@@ -60,13 +64,20 @@ public class SudokuBoardTest {
                     assertFalse((Boolean) m.invoke(board));
                 }
             }
+            for (int i = 0; i < 9; i++) {
+                for (int j = 0; j < 9; j++) {
+                    assertFalse(board.getRow(i).verify());
+                    assertFalse(board.getColumn(i).verify());
+                    assertFalse(board.getBox(i, j).verify());
+                }
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     @Test
-    void testGetColumn() throws IndexOutRange, NullValue {
+    void testGetColumn() throws IndexOutRange {
         SudokuSolver bs = new BackTrackingSudokuSolver();
         SudokuBoard board = new SudokuBoard(bs);
         board.solveGame();
@@ -78,7 +89,7 @@ public class SudokuBoardTest {
     }
 
     @Test
-    void testGetRow() throws IndexOutRange, NullValue {
+    void testGetRow() throws IndexOutRange {
         SudokuSolver bs = new BackTrackingSudokuSolver();
         SudokuBoard board = new SudokuBoard(bs);
         board.solveGame();
@@ -90,7 +101,7 @@ public class SudokuBoardTest {
     }
 
     @Test
-    void testGetbox() throws IndexOutRange, NullValue {
+    void testGetbox() throws IndexOutRange {
         SudokuSolver bs = new BackTrackingSudokuSolver();
         SudokuBoard board = new SudokuBoard(bs);
         board.solveGame();
@@ -111,30 +122,6 @@ public class SudokuBoardTest {
         assertEquals(board.getCell(4,-8), 0);
         assertEquals(board.getCell(13,3), 0);
         assertEquals(board.getCell(3,44), 0);
-    }
-
-    @Test
-    void testNullValue() {
-        SudokuSolver bs = new BackTrackingSudokuSolver();
-        SudokuBoard board = new SudokuBoard(bs);
-        try {
-            board.getColumn(0);
-        }
-        catch (NullValue exp) {
-            System.out.println(exp);
-        }
-        try {
-            board.getBox(0,0);
-        }
-        catch (NullValue exp) {
-            System.out.println(exp);
-        }
-        try {
-            board.getRow(0);
-        }
-        catch (NullValue exp) {
-            System.out.println(exp);
-        }
     }
 
     @Test

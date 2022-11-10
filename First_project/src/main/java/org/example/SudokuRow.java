@@ -1,7 +1,9 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class SudokuRow extends SudokuGroups {
-    public SudokuRow(SudokuField[] fields) {
+    public SudokuRow(ArrayList<SudokuField> fields) {
         super(fields);
     }
 }
