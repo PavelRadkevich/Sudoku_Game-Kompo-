@@ -1,4 +1,5 @@
-package org.example;
+
+package org.sudoku;
 
 import java.util.ArrayList;
 

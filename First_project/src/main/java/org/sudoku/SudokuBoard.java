@@ -1,6 +1,11 @@
-package org.example;
+
+package org.sudoku;
 
 import java.util.ArrayList;
+import java.util.StringJoiner;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+
 
 public class SudokuBoard {
     private final SudokuField[][] sudokuBoard = new SudokuField[9][9];
@@ -94,24 +99,6 @@ public class SudokuBoard {
     public void solveGame() throws IndexOutRange {
         this.solver = new BackTrackingSudokuSolver();
         solver.solve(this);
-        this.updateBoard();
-    }
-
-    private boolean checkBoard() {
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                if (!sudokuBoard[i][j].getColumn().verify()) {
-                    return false;
-                }
-                if (!sudokuBoard[i][j].getBox().verify()) {
-                    return false;
-                }
-                if (!sudokuBoard[i][j].getRow().verify()) {
-                    return false;
-                }
-            }
-        }
-            return true;
     }
 
     public boolean checkCell(int num, int x, int y) throws IndexOutRange {
@@ -131,6 +118,35 @@ public class SudokuBoard {
         sudokuBoard[x][y].setFieldValue(0);
         return true;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        SudokuBoard board = (SudokuBoard) o;
+        return new EqualsBuilder().append(sudokuBoard, board.sudokuBoard).append(solver,
+                board.solver).isEquals();
+    }
+
+    @Override
+    public int hashCode() {
+        return new HashCodeBuilder(17, 37)
+                .append(sudokuBoard).append(solver).toHashCode();
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", SudokuBoard.class.getSimpleName() + "@"
+                + Integer.toHexString(this.hashCode()) + "[", "]")
+                .add("Solver=" + solver.getClass().getSimpleName() + "@"
+                        + Integer.toHexString(solver.hashCode()))
+                .toString();
+    }
+
 
 }
 

@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1e8d4c-2f4b-4ff9-9d42-8b02fa99f122" name="Changes" comment="" />
+    <list default="true" id="5b71c3e5-cef4-42f6-8b64-59eec449d5a5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/SudokuBoard.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -33,100 +20,50 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2GgYUgP4ybh0eBSDA1ZditS65Jv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2HfneAjA2PJ5HWISN30r7kt8Lxz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mikol/Desktop/Pokom/mkw_czw_1545_07/First_project&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/mikol/Desktop/Pokom/Nowy folder/First_project",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.JavaFX"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.SudokuBoardTest.testNullValue">
-    <configuration name="SudokuBoardTest.testCheckBoardFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="JUnit.SudokuBoardTest.toStringTest">
+    <configuration name="SudokuBoardTest.toStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sudoku" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.sudoku.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SudokuBoardTest" />
-      <option name="METHOD_NAME" value="testCheckBoardFalse" />
+      <option name="MAIN_CLASS_NAME" value="org.sudoku.SudokuBoardTest" />
+      <option name="METHOD_NAME" value="toStringTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuBoardTest.testGetColumn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SudokuFieldTest.toStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sudoku" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.sudoku.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SudokuBoardTest" />
-      <option name="METHOD_NAME" value="testGetColumn" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SudokuBoardTest.testGetRow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sudoku" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SudokuBoardTest" />
-      <option name="METHOD_NAME" value="testGetRow" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SudokuBoardTest.testGetbox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sudoku" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SudokuBoardTest" />
-      <option name="METHOD_NAME" value="testGetbox" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SudokuBoardTest.testNullValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sudoku" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.SudokuBoardTest" />
-      <option name="METHOD_NAME" value="testNullValue" />
+      <option name="MAIN_CLASS_NAME" value="org.sudoku.SudokuFieldTest" />
+      <option name="METHOD_NAME" value="toStringTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,47 +71,28 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SudokuBoardTest.testNullValue" />
-        <item itemvalue="JUnit.SudokuBoardTest.testGetbox" />
-        <item itemvalue="JUnit.SudokuBoardTest.testGetRow" />
-        <item itemvalue="JUnit.SudokuBoardTest.testGetColumn" />
-        <item itemvalue="JUnit.SudokuBoardTest.testCheckBoardFalse" />
+        <item itemvalue="JUnit.SudokuBoardTest.toStringTest" />
+        <item itemvalue="JUnit.SudokuFieldTest.toStringTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6c1e8d4c-2f4b-4ff9-9d42-8b02fa99f122" name="Changes" comment="" />
-      <created>1666811711597</created>
+      <changelist id="5b71c3e5-cef4-42f6-8b64-59eec449d5a5" name="Changes" comment="" />
+      <created>1668685099429</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666811711597</updated>
-      <workItem from="1666811713111" duration="12545000" />
-      <workItem from="1666862241142" duration="2558000" />
-      <workItem from="1666878524097" duration="4027000" />
-      <workItem from="1666886937542" duration="512000" />
-      <workItem from="1667305850592" duration="137000" />
-      <workItem from="1667417613777" duration="564000" />
-      <workItem from="1667731962512" duration="19647000" />
-      <workItem from="1667824643773" duration="11027000" />
-      <workItem from="1668027188557" duration="3239000" />
-      <workItem from="1668080222804" duration="690000" />
+      <updated>1668685099429</updated>
+      <workItem from="1668685100815" duration="6947000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
