@@ -31,6 +31,10 @@ public class SudokuBoard {
         }
     }
 
+    private SudokuField getField(int x, int y) {
+        return sudokuBoard[x][y];
+    }
+
     public void setCell(int x, int y, int value) throws IndexOutRange {
         if (x >= 0 && x < 9 && y >= 0 && y < 9 && value >= 1 && value <= 9) {
             this.sudokuBoard[x][y].setFieldValue(value);

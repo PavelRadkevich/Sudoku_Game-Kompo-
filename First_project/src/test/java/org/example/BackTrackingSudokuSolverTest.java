@@ -201,4 +201,16 @@ public class BackTrackingSudokuSolverTest {
         e.printStackTrace();
     }
     }
+
+    @Test
+    public void testEquals() {
+        SudokuSolver bs = new BackTrackingSudokuSolver();
+        SudokuSolver bs1 = new BackTrackingSudokuSolver();
+        SudokuBoard board = new SudokuBoard(bs);
+        assertTrue(bs.equals(bs1));
+        assertFalse(bs.equals(null));
+        assertFalse(bs.equals(board));
+
+    }
+
 }
