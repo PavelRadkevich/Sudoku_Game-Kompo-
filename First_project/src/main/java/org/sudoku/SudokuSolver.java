@@ -1,4 +1,3 @@
-
 package org.sudoku;
 
 public interface SudokuSolver {

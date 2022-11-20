@@ -1,4 +1,3 @@
-
 package org.sudoku;
 
 import java.util.StringJoiner;
