@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b71c3e5-cef4-42f6-8b64-59eec449d5a5" name="Changes" comment="" />
+    <list default="true" id="54d139db-7ecb-404d-8ca9-e692dd4ef79c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -20,7 +28,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2HfneAjA2PJ5HWISN30r7kt8Lxz" />
+  <component name="ProjectId" id="2Hxq5F0DXPavQsk1761lEEaALe6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,39 +38,96 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mikol/Desktop/Pokom/Nowy folder/First_project",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/mikol/Desktop/Trash",
     "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.JavaFX"
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.SudokuBoardTest.toStringTest">
-    <configuration name="SudokuBoardTest.toStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sudoku" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.sudoku" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.FileSudokuBoardDaoTest.writeIOExceptionTest">
+    <configuration name="FileSudokuBoardDaoTest.exceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ModelProject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.sudoku.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.sudoku.SudokuBoardTest" />
-      <option name="METHOD_NAME" value="toStringTest" />
+      <option name="PACKAGE_NAME" value="org.sudoku" />
+      <option name="MAIN_CLASS_NAME" value="org.sudoku.FileSudokuBoardDaoTest" />
+      <option name="METHOD_NAME" value="exceptionTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SudokuFieldTest.toStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sudoku" />
+    <configuration name="FileSudokuBoardDaoTest.writeIOExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ModelProject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.sudoku.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.sudoku.SudokuFieldTest" />
+      <option name="PACKAGE_NAME" value="org.sudoku" />
+      <option name="MAIN_CLASS_NAME" value="org.sudoku.FileSudokuBoardDaoTest" />
+      <option name="METHOD_NAME" value="writeIOExceptionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileSudokuBoardDaoTest.writeReadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ModelProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sudoku" />
+      <option name="MAIN_CLASS_NAME" value="org.sudoku.FileSudokuBoardDaoTest" />
+      <option name="METHOD_NAME" value="writeReadTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileSudokuBoardDaoTest.writereadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ModelProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sudoku" />
+      <option name="MAIN_CLASS_NAME" value="org.sudoku.FileSudokuBoardDaoTest" />
+      <option name="METHOD_NAME" value="writereadTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SudokuGroupsTest.toStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ModelProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sudoku.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sudoku" />
+      <option name="MAIN_CLASS_NAME" value="org.sudoku.SudokuGroupsTest" />
       <option name="METHOD_NAME" value="toStringTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -71,28 +136,27 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SudokuBoardTest.toStringTest" />
-        <item itemvalue="JUnit.SudokuFieldTest.toStringTest" />
+        <item itemvalue="JUnit.FileSudokuBoardDaoTest.writeIOExceptionTest" />
+        <item itemvalue="JUnit.FileSudokuBoardDaoTest.exceptionTest" />
+        <item itemvalue="JUnit.FileSudokuBoardDaoTest.writeReadTest" />
+        <item itemvalue="JUnit.FileSudokuBoardDaoTest.writereadTest" />
+        <item itemvalue="JUnit.SudokuGroupsTest.toStringTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5b71c3e5-cef4-42f6-8b64-59eec449d5a5" name="Changes" comment="" />
-      <created>1668685099429</created>
+      <changelist id="54d139db-7ecb-404d-8ca9-e692dd4ef79c" name="Changes" comment="" />
+      <created>1669236898839</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1668685099429</updated>
-      <workItem from="1668685100815" duration="6947000" />
+      <updated>1669236898839</updated>
+      <workItem from="1669236900352" duration="19176000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
