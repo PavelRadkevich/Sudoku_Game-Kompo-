@@ -1,13 +1,20 @@
 package org.sudoku;
 
+<<<<<<< HEAD
 import java.io.Serializable;
+=======
+>>>>>>> 7a747dfae27c99e64036897ca0e29bfbec53252b
 import java.util.ArrayList;
 import java.util.StringJoiner;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 
+<<<<<<< HEAD
 public class SudokuBoard implements Serializable {
+=======
+public class SudokuBoard {
+>>>>>>> 7a747dfae27c99e64036897ca0e29bfbec53252b
     private final SudokuField[][] sudokuBoard = new SudokuField[9][9];
     private SudokuSolver solver;
 

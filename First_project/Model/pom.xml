@@ -5,6 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.sudoku</groupId>
+<<<<<<< HEAD
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
@@ -13,6 +14,8 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+=======
+>>>>>>> 7a747dfae27c99e64036897ca0e29bfbec53252b
     <parent>
         <groupId>org.sudoku</groupId>
         <artifactId>SudokuGameProject</artifactId>
