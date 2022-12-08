@@ -34,7 +34,7 @@ public class SudokuBoardTest {
         SudokuBoard board = new SudokuBoard(bs);
         board.solveGame();
         try {
-            Method m = SudokuBoard.class.getDeclaredMethod("checkBoard");
+            Method m = SudokuBoard.class.getDeclaredMethod("updateBoard");
             m.setAccessible(true);
             assertTrue((Boolean) m.invoke(board));
             for (int i = 0; i < 9; i++) {
@@ -56,12 +56,12 @@ public class SudokuBoardTest {
         SudokuBoard board = new SudokuBoard(bs);
         board.solveGame();
         try {
-            Method m = SudokuBoard.class.getDeclaredMethod("checkBoard");
+            Method m = SudokuBoard.class.getDeclaredMethod("updateBoard");
             m.setAccessible(true);
             for (int i = 0; i < 9; i++) {
                 for (int j = 0; j < 9; j++) {
                     board.setCell(i, j, 1);
-                    board.updateBoard();
+                    m.invoke(board);
                     assertFalse((Boolean) m.invoke(board));
                 }
             }

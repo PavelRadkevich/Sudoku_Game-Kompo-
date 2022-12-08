@@ -1,20 +1,14 @@
 package org.sudoku;
 
-<<<<<<< HEAD
 import java.io.Serializable;
-=======
->>>>>>> 7a747dfae27c99e64036897ca0e29bfbec53252b
 import java.util.ArrayList;
 import java.util.StringJoiner;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 
-<<<<<<< HEAD
-public class SudokuBoard implements Serializable {
-=======
-public class SudokuBoard {
->>>>>>> 7a747dfae27c99e64036897ca0e29bfbec53252b
+
+public class SudokuBoard implements Serializable, Cloneable {
     private final SudokuField[][] sudokuBoard = new SudokuField[9][9];
     private SudokuSolver solver;
 
@@ -62,14 +56,14 @@ public class SudokuBoard {
         return sudokuBoard[x][y].getBox();
     }
 
-    public void updateBoard() {
+    private void updateBoard() {
         for (int i = 0; i < 9; i++) {
             ArrayList<SudokuField> fields = new ArrayList<>();
             for (int j = 0; j < 9; j++) {
                 fields.add(j, sudokuBoard[i][j]);
             }
             for (int j = 0; j < 9; j++) {
-                SudokuRow row = new SudokuRow(fields);
+                SudokuRow row = new SudokuRow(fields, i);
                 sudokuBoard[i][j].setRow(row);
             }
         }
@@ -79,7 +73,7 @@ public class SudokuBoard {
                 fields.add(j, sudokuBoard[j][i]);
             }
             for (int j = 0; j < 9; j++) {
-                SudokuColumn column = new SudokuColumn(fields);
+                SudokuColumn column = new SudokuColumn(fields, i);
                 sudokuBoard[j][i].setColumn(column);
             }
         }
@@ -155,4 +149,18 @@ public class SudokuBoard {
     }
 
 
+    @Override
+    public SudokuBoard clone() {
+        try {
+            SudokuBoard clone = (SudokuBoard) super.clone();
+            for (int i = 0; i < 9; i ++) {
+                for (int j = 0; j < 9; j++) {
+                    clone.sudokuBoard[i][j] = this.sudokuBoard[i][j].clone();
+                }
+            }
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
 }

@@ -1,12 +1,12 @@
 package org.sudoku;
 
-import java.io.Serializable;
+import java.io.*;
 import java.util.StringJoiner;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 
-public class SudokuField implements Serializable {
+public class SudokuField implements Serializable, Comparable<SudokuField>, Cloneable {
     private int value = 0;
     private SudokuColumn column;
     private SudokuRow row;
@@ -79,5 +79,33 @@ public class SudokuField implements Serializable {
                 .add("row=" + row)
                 .add("box=" + box)
                 .toString();
+    }
+
+    @Override
+    public SudokuField clone() {
+        try (ByteArrayOutputStream baos = new ByteArrayOutputStream();
+             ObjectOutputStream ous = new ObjectOutputStream(baos);
+             ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
+             ObjectInputStream ois = new ObjectInputStream(bais)) {
+                ous.writeObject(this);
+                ous.close();
+            return (SudokuField)ois.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public int compareTo(SudokuField o) {
+        if (o == null) {
+            throw new NullPointerException();
+        }
+        if (o.getRow().numberOfGroup > this.getRow().numberOfGroup) {
+            return -1;
+        }
+        if (o.getColumn().numberOfGroup > this.getColumn().numberOfGroup) {
+            return -1;
+        }
+        return 0;
     }
 }
