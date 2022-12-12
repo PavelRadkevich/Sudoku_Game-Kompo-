@@ -1,8 +1,7 @@
 module com.sudoku.view {
     requires javafx.controls;
     requires javafx.fxml;
-    requires org.sudoku.Model;
-
+    requires ModelProject;
     opens com.sudoku.view to javafx.fxml;
     exports com.sudoku.view;
 }
