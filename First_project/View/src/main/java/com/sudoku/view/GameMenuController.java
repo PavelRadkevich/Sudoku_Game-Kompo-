@@ -3,7 +3,6 @@ package com.sudoku.view;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
-import javafx.scene.shape.Rectangle;
 import org.sudoku.BackTrackingSudokuSolver;
 import org.sudoku.IndexOutRange;
 import org.sudoku.SudokuBoard;
