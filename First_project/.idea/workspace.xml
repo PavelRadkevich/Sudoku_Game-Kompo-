@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54d139db-7ecb-404d-8ca9-e692dd4ef79c" name="Changes" comment="" />
+    <list default="true" id="3f3caaae-3ba4-4489-adca-c869dd03f081" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
-      </list>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -27,8 +19,13 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
-  <component name="ProjectId" id="2Hxq5F0DXPavQsk1761lEEaALe6" />
+  <component name="ProjectId" id="2IuuH2ZKHy4okpMJ8rP9hFgrtfm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,23 +35,24 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/mikol/Desktop/Trash",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+    "last_opened_file_path": "C:/Users/mikol/Desktop/Nowy folder (4)/First_project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="org.sudoku" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.FileSudokuBoardDaoTest.writeIOExceptionTest">
-    <configuration name="FileSudokuBoardDaoTest.exceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SudokuBoardTest.cloneTest">
+    <configuration name="HelloApplication" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.sudoku.view.HelloApplication" />
+      <module name="View" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\mikol\javafx-sdk-19\lib&quot; --add-modules javafx.fxml,javafx.controls" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SudokuBoardTest.cloneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ModelProject" />
       <extension name="coverage">
         <pattern>
@@ -63,14 +61,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.sudoku" />
-      <option name="MAIN_CLASS_NAME" value="org.sudoku.FileSudokuBoardDaoTest" />
-      <option name="METHOD_NAME" value="exceptionTest" />
+      <option name="MAIN_CLASS_NAME" value="org.sudoku.SudokuBoardTest" />
+      <option name="METHOD_NAME" value="cloneTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileSudokuBoardDaoTest.writeIOExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SudokuFieldTest.cloneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ModelProject" />
       <extension name="coverage">
         <pattern>
@@ -79,14 +77,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.sudoku" />
-      <option name="MAIN_CLASS_NAME" value="org.sudoku.FileSudokuBoardDaoTest" />
-      <option name="METHOD_NAME" value="writeIOExceptionTest" />
+      <option name="MAIN_CLASS_NAME" value="org.sudoku.SudokuFieldTest" />
+      <option name="METHOD_NAME" value="cloneTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileSudokuBoardDaoTest.writeReadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SudokuFieldTest.compareToTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ModelProject" />
       <extension name="coverage">
         <pattern>
@@ -95,30 +93,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.sudoku" />
-      <option name="MAIN_CLASS_NAME" value="org.sudoku.FileSudokuBoardDaoTest" />
-      <option name="METHOD_NAME" value="writeReadTest" />
+      <option name="MAIN_CLASS_NAME" value="org.sudoku.SudokuFieldTest" />
+      <option name="METHOD_NAME" value="compareToTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileSudokuBoardDaoTest.writereadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ModelProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.sudoku" />
-      <option name="MAIN_CLASS_NAME" value="org.sudoku.FileSudokuBoardDaoTest" />
-      <option name="METHOD_NAME" value="writereadTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SudokuGroupsTest.toStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SudokuGroupsTest.cloneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ModelProject" />
       <extension name="coverage">
         <pattern>
@@ -128,35 +110,57 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.sudoku" />
       <option name="MAIN_CLASS_NAME" value="org.sudoku.SudokuGroupsTest" />
-      <option name="METHOD_NAME" value="toStringTest" />
+      <option name="METHOD_NAME" value="cloneTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.HelloApplication" />
+      <item itemvalue="JUnit.SudokuBoardTest.cloneTest" />
+      <item itemvalue="JUnit.SudokuFieldTest.cloneTest" />
+      <item itemvalue="JUnit.SudokuFieldTest.compareToTest" />
+      <item itemvalue="JUnit.SudokuGroupsTest.cloneTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FileSudokuBoardDaoTest.writeIOExceptionTest" />
-        <item itemvalue="JUnit.FileSudokuBoardDaoTest.exceptionTest" />
-        <item itemvalue="JUnit.FileSudokuBoardDaoTest.writeReadTest" />
-        <item itemvalue="JUnit.FileSudokuBoardDaoTest.writereadTest" />
-        <item itemvalue="JUnit.SudokuGroupsTest.toStringTest" />
+        <item itemvalue="JUnit.SudokuBoardTest.cloneTest" />
+        <item itemvalue="JUnit.SudokuGroupsTest.cloneTest" />
+        <item itemvalue="JUnit.SudokuFieldTest.compareToTest" />
+        <item itemvalue="JUnit.SudokuFieldTest.cloneTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="54d139db-7ecb-404d-8ca9-e692dd4ef79c" name="Changes" comment="" />
-      <created>1669236898839</created>
+      <changelist id="3f3caaae-3ba4-4489-adca-c869dd03f081" name="Changes" comment="" />
+      <created>1671043699404</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1669236898839</updated>
-      <workItem from="1669236900352" duration="19176000" />
+      <updated>1671043699404</updated>
+      <workItem from="1671043700656" duration="23000" />
+      <workItem from="1671043765798" duration="9717000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuGroupsTest.java</url>
+          <line>78</line>
+          <properties class="org.sudoku.SudokuGroupsTest" method="cloneTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

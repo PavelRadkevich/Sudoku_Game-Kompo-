@@ -8,11 +8,17 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 
-public abstract class SudokuGroups implements Serializable {
+public abstract class SudokuGroups implements Serializable, Cloneable {
     protected List<SudokuField> fields = new ArrayList<>();
+    protected int numberOfGroup = 0;
+
+    SudokuGroups(final ArrayList<SudokuField> fields, int numberOfGroup) {
+    this.fields = fields;
+    this.numberOfGroup = numberOfGroup;
+    }
 
     SudokuGroups(final ArrayList<SudokuField> fields) {
-    this.fields = fields;
+        this.fields = fields;
     }
 
     public boolean verify() {
@@ -60,5 +66,18 @@ public abstract class SudokuGroups implements Serializable {
                 + Integer.toHexString(this.hashCode()) + "[", "]")
                 .add("fields = " + this.getFields())
                 .toString();
+    }
+
+    @Override
+    public SudokuGroups clone() {
+        try {
+            SudokuGroups clone = (SudokuGroups) super.clone();
+            for (int i = 0; i < 9; i++) {
+                clone.fields.set(i, this.fields.get(i).clone());
+            }
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
     }
 }

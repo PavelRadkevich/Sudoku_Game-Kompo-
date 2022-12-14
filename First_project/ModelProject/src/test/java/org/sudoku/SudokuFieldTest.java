@@ -53,4 +53,35 @@ public class SudokuFieldTest {
                 .toString();
         assertEquals(str, field.toString());
     }
+
+    @Test
+    void cloneTest() throws CloneNotSupportedException {
+        SudokuField field = new SudokuField();
+        field.setFieldValue(5);
+        SudokuField o = field.clone();
+        System.out.println(o.getFieldValue());
+        assertTrue(field.equals(o));
+    }
+
+    @Test
+    void compareToTest() {
+        SudokuField field1 = new SudokuField();
+        field1.setFieldValue(1);
+        SudokuField field2 = new SudokuField();
+        field2.setFieldValue(2);
+        SudokuField field3 = new SudokuField();
+        field3.setFieldValue(2);
+        assertEquals(1,field2.compareTo(field1));
+        assertEquals(-1,field1.compareTo(field2));
+        assertEquals(0,field2.compareTo(field3));
+        try {
+            SudokuField field = null;
+            field1.compareTo(field);
+        } catch (NullPointerException e) {
+            assertTrue(true);
+        } catch (Exception e) {
+            assertTrue(false);
+        }
+
+    }
 }

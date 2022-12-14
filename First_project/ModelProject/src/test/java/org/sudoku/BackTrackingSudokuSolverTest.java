@@ -12,7 +12,6 @@ public class BackTrackingSudokuSolverTest {
 
     @Test
     public void testFillBoard() throws IndexOutRange {
-<<<<<<< HEAD
         for (int x = 0; x < 1000; x++) {
             SudokuSolver bs = new BackTrackingSudokuSolver();
             SudokuBoard board1 = new SudokuBoard(bs);
@@ -36,30 +35,6 @@ public class BackTrackingSudokuSolverTest {
             }
             assertNotEquals(81, match);
         }
-=======
-        SudokuSolver bs = new BackTrackingSudokuSolver();
-        SudokuBoard board1 = new SudokuBoard(bs);
-        SudokuBoard board2 = new SudokuBoard(bs);
-        board1.solveGame();
-        board2.solveGame();
-        int match = 0;
-        try {
-            Method m = SudokuBoard.class.getDeclaredMethod("getCell", int.class, int.class);
-            m.setAccessible(true);
-            for (int i = 0; i < 9; i++) {
-                for (int j = 0; j < 9; j++) {
-                    if (m.invoke(board1, i, j) == m.invoke(board2, i, j)) {
-                        match++;
-                    }
-                }
-            }
-
-        }
-        catch(Exception e) {
-            e.printStackTrace();
-        }
-        assertNotEquals(81, match);
->>>>>>> 7a747dfae27c99e64036897ca0e29bfbec53252b
     }
 
     @Test

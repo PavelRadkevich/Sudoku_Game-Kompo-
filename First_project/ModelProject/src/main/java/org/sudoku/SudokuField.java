@@ -1,12 +1,17 @@
 package org.sudoku;
 
+/*import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.IOException;*/
 import java.io.Serializable;
 import java.util.StringJoiner;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 
-public class SudokuField implements Serializable {
+public class SudokuField implements Serializable, Comparable<SudokuField>, Cloneable {
     private int value = 0;
     private SudokuColumn column;
     private SudokuRow row;
@@ -79,5 +84,32 @@ public class SudokuField implements Serializable {
                 .add("row=" + row)
                 .add("box=" + box)
                 .toString();
+    }
+
+    @Override
+    public SudokuField clone() throws CloneNotSupportedException {
+        /*try (ByteArrayOutputStream baos = new ByteArrayOutputStream();
+             ObjectOutputStream ous = new ObjectOutputStream(baos);
+             ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
+             ObjectInputStream ois = new ObjectInputStream(bais)) {
+                ous.writeObject(this);
+                ous.close();
+            return (SudokuField)ois.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }*/
+        return (SudokuField) super.clone();
+    }
+
+    @Override
+    public int compareTo(SudokuField o) {
+        if (o == null) {
+            throw new NullPointerException();
+        } else if (o.getFieldValue() > this.getFieldValue()) {
+            return -1;
+        } else if (o.getFieldValue() < this.getFieldValue()) {
+            return 1;
+        }
+        return 0;
     }
 }
