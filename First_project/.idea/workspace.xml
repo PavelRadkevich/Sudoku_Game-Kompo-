@@ -4,11 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f3caaae-3ba4-4489-adca-c869dd03f081" name="Changes" comment="" />
+    <list default="true" id="5b71c3e5-cef4-42f6-8b64-59eec449d5a5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Coordinates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/DifficultyLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/First_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/First_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/License.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/ModelProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/ModelProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/Sudoku.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/Sudoku.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/checkstyle2022.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/checkstyle2022.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/FileSudokuBoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/FileSudokuBoardDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuBoardDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuBoardDaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuField.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuGroups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/BackTrackingSudokuSolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/BackTrackingSudokuSolverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuBoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuFieldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuGroupsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuGroupsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuGameProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuGameProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/View/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/GameMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/GameMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/StartMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/StartMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/GameMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/GameMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/StartMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/StartMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -19,35 +59,55 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="2IuuH2ZKHy4okpMJ8rP9hFgrtfm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mikol/Desktop/Nowy folder (4)/First_project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mikol/Desktop/Nowy folder (4)/First_project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.SudokuBoardTest.cloneTest">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Study\III Semestr\2.1 Programowanie Komponentowe\SudokuProject\First_project\View\src\main\resources\com\sudoku\view" />
+      <recent name="E:\Study\III Semestr\2.1 Programowanie Komponentowe\SudokuProject\First_project\View\src\main\java\com\sudoku\view" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main View Radkevich">
     <configuration name="HelloApplication" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.sudoku.view.HelloApplication" />
       <module name="View" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\mikol\javafx-sdk-19\lib&quot; --add-modules javafx.fxml,javafx.controls" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main View Radkevich" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.sudoku.view.HelloApplication" />
+      <module name="View" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-19\lib&quot; --add-modules javafx.fxml,javafx.controls" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,6 +178,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.HelloApplication" />
+      <item itemvalue="Application.Main View Radkevich" />
       <item itemvalue="JUnit.SudokuBoardTest.cloneTest" />
       <item itemvalue="JUnit.SudokuFieldTest.cloneTest" />
       <item itemvalue="JUnit.SudokuFieldTest.compareToTest" />
@@ -148,12 +209,23 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuGroupsTest.java</url>
-          <line>78</line>
+          <line>77</line>
           <properties class="org.sudoku.SudokuGroupsTest" method="cloneTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
