@@ -12,7 +12,7 @@ public class FileSudokuBoardDao implements Dao<SudokuBoard> {
 
     private final String filename;
 
-    FileSudokuBoardDao(String filenameK) {
+    public FileSudokuBoardDao(String filenameK) {
         filename = filenameK + ".txt";
     }
 

@@ -1,27 +1,31 @@
 package com.sudoku.view;
 
-import javafx.beans.Observable;
-import javafx.collections.ObservableList;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.Alert;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.RowConstraints;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import org.sudoku.BackTrackingSudokuSolver;
-import org.sudoku.IndexOutRange;
-import org.sudoku.SudokuBoard;
+import org.sudoku.*;
+
+import java.io.File;
+import java.util.ResourceBundle;
 
 
 public class GameMenuController {
     static Stage stage;
-    public ColumnConstraints column3;
     @FXML
     private GridPane grid;
     BackTrackingSudokuSolver bs;
     SudokuBoard board;
     SudokuBoard gameBoard;
     DifficultyLevel dl;
+    ResourceBundle bundle = ResourceBundle.getBundle("Languages");
+    File file;
+    FileSudokuBoardDao dao;
 
 
     @FXML
@@ -40,14 +44,74 @@ public class GameMenuController {
         for (int x = 0; x < 9; x++){
             for (int y = 0; y < 9; y++){
                 if (board.getCell(x, y) != 0) {
-                    Label label = new Label(Integer.toString(board.getCell(x, y)));
-                    label.setStyle(" -fx-font-family: Georgia; -fx-font-size: 25");
-                    grid.add(label, x, y);
+                    TextField field = new TextField(Integer.toString(board.getCell(x, y)));
+                    field.setMinSize(20,20);
+                    field.setStyle(" -fx-font-family: Georgia; -fx-font-size: 18");
+                    grid.add(field, x, y);
+                }
+                else {
+                    TextField field = new TextField("");
+                    field.setMinSize(20,20);
+                    field.setStyle(" -fx-font-family: Georgia; -fx-font-size: 18");
+                    grid.add(field, x, y);
+                }
+            }
+        }
+    }
+    @FXML
+    public void ButtonCheck(ActionEvent actionEvent) throws IndexOutRange {
+        for (int i = 0; i < 81; i++) {
+            String textField = String.valueOf(grid.getChildren().get(i));
+            if (!(textField.matches("1-9") || textField.equals(""))) {
+                alert (Alert.AlertType.WARNING, bundle.getString("niepoprawnaPlansza"));
+                return;
+            }
+        }
+        refillBoard();
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                if (board.checkCell(board.getCell(i, j), i, j)) {
+                    alert(Alert.AlertType.INFORMATION, bundle.getString("win"));
+                }
+                else {
+                    alert(Alert.AlertType.INFORMATION, bundle.getString("lose"));
                 }
             }
         }
     }
 
-
+    @FXML
+    public void ButtonToFile(ActionEvent actionEvent) throws IndexOutRange {
+        refillBoard();
+        /*FileChooser fileChooser = new FileChooser();
+        try {
+            file = fileChooser.showSaveDialog(stage);
+            FileSudokuBoardDao dao1 = new FileSudokuBoardDao(file.getName());
+            dao1.write(board);
+            dao = dao1;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }*/
+    }
+    @FXML
+    public void refillBoard () throws IndexOutRange {
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                String textField = ((TextField) grid.getChildren().get(i * 9 + j)).getText();
+                if (textField.equals("")) {
+                    board.setCell(i, j, 0);
+                }
+                else {
+                    board.setCell(i, j, Integer.parseInt(textField));
+                }
+            }
+        }
+    }
+    @FXML
+    public void alert (Alert.AlertType type, String message) {
+        Alert alert = new Alert(type);
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
 
 }
