@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b71c3e5-cef4-42f6-8b64-59eec449d5a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/View/src/main/resources/Languages_PL.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/src/main/resources/Languages_RU.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nasze.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_PL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_RU.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/First_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/First_project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/License.txt" afterDir="false" />
@@ -28,10 +29,10 @@
       <change beforePath="$PROJECT_DIR$/SudokuGameProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuGameProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/View/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/GameMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/GameMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/StartMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/StartMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/resources/Languages_PL.properties" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/Languages_PL.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/resources/Languages_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/Languages_RU.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/GameMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/GameMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/StartMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/StartMenu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +71,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -106,10 +108,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,6 +206,7 @@
       <workItem from="1671043700656" duration="23000" />
       <workItem from="1671043765798" duration="9717000" />
       <workItem from="1673267909100" duration="15697000" />
+      <workItem from="1673463593232" duration="5949000" />
     </task>
     <servers />
   </component>
@@ -223,6 +224,9 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -239,6 +243,11 @@
           <properties class="java.util.MissingResourceException" package="java.util" />
           <option name="timeStamp" value="5" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/View/src/main/java/com/sudoku/view/GameMenuController.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

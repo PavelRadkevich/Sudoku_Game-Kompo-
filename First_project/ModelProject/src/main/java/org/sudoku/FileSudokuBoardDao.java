@@ -10,10 +10,10 @@ import java.io.ObjectOutputStream;
 
 public class FileSudokuBoardDao implements Dao<SudokuBoard> {
 
-    private final String filename;
+    private String filename;
 
     public FileSudokuBoardDao(String filenameK) {
-        filename = filenameK + ".txt";
+        filename = filenameK;
     }
 
     @Override
@@ -31,6 +31,7 @@ public class FileSudokuBoardDao implements Dao<SudokuBoard> {
 
     @Override
     public void write(SudokuBoard board) {
+        filename = filename + ".txt";
         try (FileOutputStream fileStream = new FileOutputStream(filename);
              ObjectOutputStream objectStream = new ObjectOutputStream(fileStream)) {
             objectStream.writeObject(board);

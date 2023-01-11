@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 import org.sudoku.*;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ResourceBundle;
 
 
@@ -26,6 +27,8 @@ public class GameMenuController {
     ResourceBundle bundle = ResourceBundle.getBundle("Languages");
     File file;
     FileSudokuBoardDao dao;
+    Dao<SudokuBoard> filesbDao;
+    SudokuBoardDaoFactory sbFactory = new SudokuBoardDaoFactory();
 
 
     @FXML
@@ -83,26 +86,38 @@ public class GameMenuController {
     @FXML
     public void ButtonToFile(ActionEvent actionEvent) throws IndexOutRange {
         refillBoard();
-        /*FileChooser fileChooser = new FileChooser();
+        FileChooser fileChooser = new FileChooser();
         try {
             file = fileChooser.showSaveDialog(stage);
-            FileSudokuBoardDao dao1 = new FileSudokuBoardDao(file.getName());
-            dao1.write(board);
-            dao = dao1;
+            filesbDao = sbFactory.getFileDao(file.getName());
+            filesbDao.write(board);
         } catch (Exception e) {
             throw new RuntimeException(e);
-        }*/
+        }
+    }
+
+    public void ButtonRead(ActionEvent actionEvent) {
+        FileChooser fileChooser = new FileChooser();
+        try {
+            file = fileChooser.showOpenDialog(stage);
+            filesbDao = sbFactory.getFileDao(file.getName());
+            board = filesbDao.read();
+            gridFill(board);
+        } catch (FileNotFoundException | IndexOutRange e) {
+            throw new RuntimeException(e);
+        }
     }
     @FXML
     public void refillBoard () throws IndexOutRange {
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
-                String textField = ((TextField) grid.getChildren().get(i * 9 + j)).getText();
-                if (textField.equals("")) {
-                    board.setCell(i, j, 0);
-                }
-                else {
-                    board.setCell(i, j, Integer.parseInt(textField));
+                if (i * 9 + j != 0) {
+                    String textField = ((TextField) grid.getChildren().get(i * 9 + j)).getText();
+                    if (textField.equals("")) {
+                        board.setCell(i, j, 0);
+                    } else {
+                        board.setCell(i, j, Integer.parseInt(textField));
+                    }
                 }
             }
         }
@@ -113,5 +128,6 @@ public class GameMenuController {
         alert.setContentText(message);
         alert.showAndWait();
     }
+
 
 }
