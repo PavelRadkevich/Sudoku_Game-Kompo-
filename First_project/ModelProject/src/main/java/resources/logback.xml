@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true">
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%d{HH:mm:ss.SSS} [%t] %highlight{%level}{FATAL=bg_red, ERROR=red, WARN=yellow, INFO=green, DEBUG=blue} %logger{36} - %msg%n</pattern>
+        </layout>
+    </appender>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender" >
+        <file>logi/wartosci.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%t] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="org.sudoku" level="debug" >
+        <AppenderRef ref="CONSOLE"/>
+        <AppenderRef ref="FILE"/>
+    </logger>
+</configuration>

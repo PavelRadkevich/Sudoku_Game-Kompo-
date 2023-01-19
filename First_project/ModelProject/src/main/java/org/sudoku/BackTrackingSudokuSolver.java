@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.StringJoiner;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.sudoku.exception.IndexOutRange;
 
 
 public class BackTrackingSudokuSolver implements SudokuSolver, Serializable {

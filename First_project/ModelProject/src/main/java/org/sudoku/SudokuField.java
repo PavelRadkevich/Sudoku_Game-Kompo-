@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package org.sudoku;
 
 /*import java.io.ByteArrayInputStream;
@@ -10,6 +9,7 @@ import java.io.Serializable;
 import java.util.StringJoiner;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.sudoku.exception.NoAvaibleClone;
 
 
 public class SudokuField implements Serializable, Comparable<SudokuField>, Cloneable {
@@ -88,7 +88,7 @@ public class SudokuField implements Serializable, Comparable<SudokuField>, Clone
     }
 
     @Override
-    public SudokuField clone() throws CloneNotSupportedException {
+    public SudokuField clone() throws NoAvaibleClone {
         /*try (ByteArrayOutputStream baos = new ByteArrayOutputStream();
              ObjectOutputStream ous = new ObjectOutputStream(baos);
              ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
@@ -99,7 +99,11 @@ public class SudokuField implements Serializable, Comparable<SudokuField>, Clone
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }*/
-        return (SudokuField) super.clone();
+        try {
+            return (SudokuField) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new NoAvaibleClone(e);
+        }
     }
 
     @Override
@@ -114,116 +118,3 @@ public class SudokuField implements Serializable, Comparable<SudokuField>, Clone
         return 0;
     }
 }
-=======
-package org.sudoku;
-
-import java.io.*;
-import java.util.StringJoiner;
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-
-
-public class SudokuField implements Serializable, Comparable<SudokuField>, Cloneable {
-    private int value = 0;
-    private SudokuColumn column;
-    private SudokuRow row;
-    private SudokuBox box;
-
-
-    public SudokuField() {
-
-    }
-
-    public int getFieldValue() {
-        return value;
-    }
-
-    public void setColumn(SudokuColumn column) {
-        this.column = column;
-    }
-
-    public void setRow(SudokuRow row) {
-        this.row = row;
-    }
-
-    public void setBox(SudokuBox box) {
-        this.box = box;
-    }
-
-    public SudokuColumn getColumn() {
-        return column;
-    }
-
-    public SudokuRow getRow() {
-        return row;
-    }
-
-    public SudokuBox getBox() {
-        return box;
-    }
-
-    public void setFieldValue(int value) {
-        this.value = value;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-        SudokuField that = (SudokuField) o;
-        return new EqualsBuilder().append(value, that.value).append(getColumn(),
-                that.getColumn()).append(getRow(), that.getRow()).append(getBox(),
-                that.getBox()).isEquals();
-    }
-
-    @Override
-    public int hashCode() {
-        return new HashCodeBuilder(17, 37)
-                .append(value).append(getColumn()).append(getRow()).append(getBox())
-                .toHashCode();
-    }
-
-    @Override
-    public String toString() {
-        return new StringJoiner(", ", SudokuField.class.getSimpleName() + "@"
-                + Integer.toHexString(this.hashCode()) + "[", "]")
-                .add("value=" + value)
-                .add("column=" + column)
-                .add("row=" + row)
-                .add("box=" + box)
-                .toString();
-    }
-
-    @Override
-    public SudokuField clone() {
-        try (ByteArrayOutputStream baos = new ByteArrayOutputStream();
-             ObjectOutputStream ous = new ObjectOutputStream(baos);
-             ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
-             ObjectInputStream ois = new ObjectInputStream(bais)) {
-                ous.writeObject(this);
-                ous.close();
-            return (SudokuField)ois.readObject();
-        } catch (IOException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    @Override
-    public int compareTo(SudokuField o) {
-        if (o == null) {
-            throw new NullPointerException();
-        }
-        if (o.getRow().numberOfGroup > this.getRow().numberOfGroup) {
-            return -1;
-        }
-        if (o.getColumn().numberOfGroup > this.getColumn().numberOfGroup) {
-            return -1;
-        }
-        return 0;
-    }
-}
->>>>>>> 2b659905461f649eac73e98bd67cf301e4936055
