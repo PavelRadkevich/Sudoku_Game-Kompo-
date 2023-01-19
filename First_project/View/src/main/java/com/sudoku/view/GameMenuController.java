@@ -5,12 +5,19 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+<<<<<<< HEAD
+=======
+import javafx.scene.layout.ColumnConstraints;
+>>>>>>> dbe782392f5324cc6875fc91ded96701cc6646e4
 import javafx.scene.layout.GridPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.sudoku.*;
+<<<<<<< HEAD
 import org.sudoku.exception.DaoException;
 import org.sudoku.exception.IndexOutRange;
+=======
+>>>>>>> dbe782392f5324cc6875fc91ded96701cc6646e4
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -104,7 +111,11 @@ public class GameMenuController {
             filesbDao = sbFactory.getFileDao(file.getName());
             board = filesbDao.read();
             gridFill(board);
+<<<<<<< HEAD
         } catch (DaoException | IndexOutRange e) {
+=======
+        } catch (FileNotFoundException | IndexOutRange e) {
+>>>>>>> dbe782392f5324cc6875fc91ded96701cc6646e4
             throw new RuntimeException(e);
         }
     }
