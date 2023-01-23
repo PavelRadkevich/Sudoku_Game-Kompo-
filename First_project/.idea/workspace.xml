@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b71c3e5-cef4-42f6-8b64-59eec449d5a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Nasze.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_PL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_RU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/JdbcSudokuBoardDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/First_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/First_project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/License.txt" afterDir="false" />
@@ -22,17 +20,30 @@
       <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuField.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuGroups.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuRow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/DaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/DaoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/IndexOutRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/IndexOutRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/LevelException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/LevelException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/LoadException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/LoadException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/NoAvaibleClone.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/NoAvaibleClone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/NoFileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/NoFileException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/ReadException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/ReadException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/BackTrackingSudokuSolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/BackTrackingSudokuSolverTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuBoardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuFieldTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuGroupsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuGroupsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SudokuGameProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuGameProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/View/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_PL.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_PL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_RU.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_RU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/DifficultyLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/DifficultyLevel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/GameMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/GameMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/StartMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/StartMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/src/main/resources/Languages_PL.properties" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/Languages_PL.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/src/main/resources/Languages_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/Languages_RU.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/GameMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/GameMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/game.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,12 +86,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Study/III Semestr/Zad11oraz12_PROKOM_JanKarwowski_KamilKowalewski",
+    "last_opened_file_path": "E:/Study/III Semestr/2.1 Programowanie Komponentowe/SudokuProject/First_project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -108,8 +124,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="class" />
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,7 +224,10 @@
       <workItem from="1671043700656" duration="23000" />
       <workItem from="1671043765798" duration="9717000" />
       <workItem from="1673267909100" duration="15697000" />
-      <workItem from="1673463593232" duration="5949000" />
+      <workItem from="1673463593232" duration="6237000" />
+      <workItem from="1674071305777" duration="665000" />
+      <workItem from="1674126612989" duration="6532000" />
+      <workItem from="1674488236007" duration="6325000" />
     </task>
     <servers />
   </component>
@@ -243,11 +264,6 @@
           <properties class="java.util.MissingResourceException" package="java.util" />
           <option name="timeStamp" value="5" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/View/src/main/java/com/sudoku/view/GameMenuController.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

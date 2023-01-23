@@ -104,6 +104,9 @@ public class SudokuBoard implements Serializable, Cloneable {
     }
 
     public boolean checkCell(int num, int x, int y) throws IndexOutRange {
+        if (num == 0) {
+            return false;
+        }
         setCell(x, y, num);
         if (!sudokuBoard[x][y].getColumn().verify()) {
             sudokuBoard[x][y].setFieldValue(0);

@@ -5,19 +5,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
-<<<<<<< HEAD
-=======
-import javafx.scene.layout.ColumnConstraints;
->>>>>>> dbe782392f5324cc6875fc91ded96701cc6646e4
 import javafx.scene.layout.GridPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.sudoku.*;
-<<<<<<< HEAD
 import org.sudoku.exception.DaoException;
 import org.sudoku.exception.IndexOutRange;
-=======
->>>>>>> dbe782392f5324cc6875fc91ded96701cc6646e4
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -71,24 +64,23 @@ public class GameMenuController {
     }
     @FXML
     public void ButtonCheck(ActionEvent actionEvent) throws IndexOutRange {
-        for (int i = 0; i < 81; i++) {
+        /*for (int i = 0; i < 81; i++) {
             String textField = String.valueOf(grid.getChildren().get(i));
             if (!(textField.matches("1-9") || textField.equals(""))) {
                 alert (Alert.AlertType.WARNING, bundle.getString("niepoprawnaPlansza"));
                 return;
             }
-        }
+        }*/
         refillBoard();
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
-                if (board.checkCell(board.getCell(i, j), i, j)) {
-                    alert(Alert.AlertType.INFORMATION, bundle.getString("win"));
-                }
-                else {
+                if (!board.checkCell(board.getCell(i, j), i, j)) {
                     alert(Alert.AlertType.INFORMATION, bundle.getString("lose"));
+                    return;
                 }
             }
         }
+        alert(Alert.AlertType.INFORMATION, bundle.getString("win"));
     }
 
     @FXML
@@ -111,25 +103,19 @@ public class GameMenuController {
             filesbDao = sbFactory.getFileDao(file.getName());
             board = filesbDao.read();
             gridFill(board);
-<<<<<<< HEAD
         } catch (DaoException | IndexOutRange e) {
-=======
-        } catch (FileNotFoundException | IndexOutRange e) {
->>>>>>> dbe782392f5324cc6875fc91ded96701cc6646e4
             throw new RuntimeException(e);
         }
     }
     @FXML
     public void refillBoard () throws IndexOutRange {
         for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                if (i * 9 + j != 0) {
-                    String textField = ((TextField) grid.getChildren().get(i * 9 + j)).getText();
-                    if (textField.equals("")) {
-                        board.setCell(i, j, 0);
-                    } else {
-                        board.setCell(i, j, Integer.parseInt(textField));
-                    }
+            for (int j = 1; j < 10; j++) {
+                String textField = ((TextField) grid.getChildren().get(i * 9 + j)).getText();
+                if (textField.equals("")) {
+                    board.setCell(i, j-1, 0);
+                } else {
+                        board.setCell(i, j - 1, Integer.parseInt(textField));
                 }
             }
         }
