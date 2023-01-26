@@ -124,6 +124,24 @@ public class SudokuBoard implements Serializable, Cloneable {
         return true;
     }
 
+    public String getAllFields() {
+        String fields = "";
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                fields += String.valueOf(this.sudokuBoard[i][j].getFieldValue());
+            }
+        }
+        return fields;
+    }
+
+    public void setAllFields(String fields) {
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                sudokuBoard[i][j].setFieldValue(Character.getNumericValue(fields.charAt(i * 9 + j)));
+            }
+        }
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {

@@ -16,7 +16,6 @@ public class JdbcSudokuBoardDao implements Dao<SudokuBoard>{
         //////////SudokuBoard///////////////////
         String url = "jdbc:sqlite:./" + filename;
         Connection connection;
-        ResultSet key;
         try {
             connection = DriverManager.getConnection(url);
         } catch (SQLException e) {
@@ -26,11 +25,11 @@ public class JdbcSudokuBoardDao implements Dao<SudokuBoard>{
                 CREATE TABLE IF NOT EXISTS SudokuBoard (
                 	ID INT IDENTITY(1,1) NOT NULL PRIMARY,
                 	name text NOT NULL,
+                	fields varchar(81)
                 );""";
-        String sqlInsert = "INSERT INTO SudokuBoard(name) VALUES(?)";
+        String sqlInsert = "INSERT INTO SudokuBoard(name, fields) VALUES(?)";
         try (Statement stmt = connection.createStatement();) {
             stmt.execute(sqlCreate);
-            key = stmt.getGeneratedKeys();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -38,18 +37,25 @@ public class JdbcSudokuBoardDao implements Dao<SudokuBoard>{
 
         try (PreparedStatement pstmt = connection.prepareStatement(sqlInsert)) {
             pstmt.setString(1, filename);
+            pstmt.setString(2, sudokuBoard.getAllFields());
             pstmt.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
+        try {
+            connection.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
 
 
         /////////////SudokuField/////////////////
-        for (int i = 0; i < 9; i++) {
+        /*for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
                 String sqlFieldCreate = """
                     CREATE TABLE IF NOT EXISTS SudokuField (
                 	ID INT IDENTITY(1,1) NOT NULL PRIMARY,
+                	name text NOT NULL,
                 	value INT NOT NULL,
                 	row INT NOT NULL,
                 	column INT NOT NULL,
@@ -75,20 +81,46 @@ public class JdbcSudokuBoardDao implements Dao<SudokuBoard>{
                 System.out.println(e.getMessage());
             }
             }
-        }
+        }*/
     }
 
     @Override
     public SudokuBoard read() throws DaoException {
+        BackTrackingSudokuSolver bs = new BackTrackingSudokuSolver();
+        SudokuBoard sb = new SudokuBoard(bs);
         String url = "jdbc:sqlite:./" + filename;
         Connection connection;
+        ResultSet query;
+        String fields;
         try {
             connection = DriverManager.getConnection(url);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return null;
-    }
+        String sqlSelect = """
+                SELECT  id, name, fields
+                FROM SudokuBoard
+                WHERE name = ?
+                """;
+
+        try (PreparedStatement pstmt = connection.prepareStatement(sqlSelect)) {
+            pstmt.setString(1, filename);
+            query = pstmt.executeQuery();
+            fields = query.getString(2);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        sb.setAllFields(fields);
+
+        try {
+            connection.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+            return sb;
+        }
 
 
 }
