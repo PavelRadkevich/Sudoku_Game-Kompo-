@@ -5,45 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b71c3e5-cef4-42f6-8b64-59eec449d5a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/First_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/First_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/License.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/ModelProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/ModelProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/checkstyle2022.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/checkstyle2022.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/FileSudokuBoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/FileSudokuBoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/JdbcSudokuBoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/JdbcSudokuBoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuBoardDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuBoardDaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuColumn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuField.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuGroups.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuRow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/DaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/DaoException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/IndexOutRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/IndexOutRange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/LevelException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/LevelException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/LoadException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/LoadException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/NoAvaibleClone.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/NoAvaibleClone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/NoFileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/NoFileException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/ReadException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/ReadException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/main/java/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/BackTrackingSudokuSolverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/BackTrackingSudokuSolverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuBoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuFieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuGroupsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuGroupsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SudokuGameProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SudokuGameProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/View/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_PL.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_PL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_RU.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_RU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/DifficultyLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/DifficultyLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/GameMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/GameMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/StartMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/StartMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/resources/Languages_PL.properties" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/Languages_PL.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/resources/Languages_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/Languages_RU.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/game.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/First_project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/ModelProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/Sudoku.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/checkstyle2022.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/BackTrackingSudokuSolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/Dao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/FileSudokuBoardDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/JdbcSudokuBoardDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuBoard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuBoard.java.rej" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuBoardDaoFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuColumn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuGroups.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuRow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/SudokuSolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/DaoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/IndexOutRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/LevelException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/LoadException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/NoAvaibleClone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/NoFileException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/org/sudoku/exception/ReadException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/main/java/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/BackTrackingSudokuSolverTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/FileSudokuBoardDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuBoardDaoFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuBoardTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuFieldTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/src/test/java/org/sudoku/SudokuGroupsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModelProject/xyz.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SudokuGameProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_PL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Authors_RU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/Coordinates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/DifficultyLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/GameMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/java/com/sudoku/view/StartMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/resources/Languages_PL.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/resources/Languages_RU.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/GameMenu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/StartMenu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/src/main/resources/com/sudoku/view/game.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +89,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2IuuH2ZKHy4okpMJ8rP9hFgrtfm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -79,33 +100,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Study/III Semestr/2.1 Programowanie Komponentowe/SudokuProject/First_project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "H:/Study/III Semestr/2.1 Programowanie Komponentowe/SudokuProject/SudokuGameProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Study\III Semestr\2.1 Programowanie Komponentowe\SudokuProject\First_project\View\src\main\resources\com\sudoku\view" />
       <recent name="E:\Study\III Semestr\2.1 Programowanie Komponentowe\SudokuProject\First_project\View\src\main\java\com\sudoku\view" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
+  <component name="RunManager" selected="Application.Main View Radkevich">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloApplication" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.sudoku.view.HelloApplication" />
       <module name="View" />
@@ -119,7 +151,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.sudoku.view.HelloApplication" />
       <module name="View" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-19\lib&quot; --add-modules javafx.fxml,javafx.controls" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;H:\Study\III Semestr\2.1 Programowanie Komponentowe\javafx-sdk-19\lib&quot; --add-modules javafx.fxml,javafx.controls" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,14 +159,6 @@
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.sudoku.Main" />
       <module name="ModelProject" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -238,6 +262,10 @@
       <workItem from="1674488236007" duration="6325000" />
       <workItem from="1674728771532" duration="3976000" />
       <workItem from="1674733742574" duration="2447000" />
+      <workItem from="1679434647783" duration="576000" />
+      <workItem from="1680197184884" duration="1425000" />
+      <workItem from="1680201363292" duration="1624000" />
+      <workItem from="1681987239154" duration="626000" />
     </task>
     <servers />
   </component>
