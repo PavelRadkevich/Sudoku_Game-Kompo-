@@ -1,5 +1,4 @@
 Praca polegała na stworzeniu gry Sudoku raazem z graficznym interfejsem
-Development Environment
 2 Algorytmy
 3	Komponenty, Interfejsy
 4	Model danych OOP
